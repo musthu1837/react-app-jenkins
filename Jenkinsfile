@@ -1,7 +1,7 @@
 @Library('shared-library@master') _
 pipeline {
     agent any
-
+    tools {nodejs "nodejs"}
     stages {
         stage('Git Checkout') {
             steps{
